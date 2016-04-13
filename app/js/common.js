@@ -1,4 +1,15 @@
+
 $(function() {
+
+	$(document).ready(function() {
+
+		$(".loader_inner").fadeOut();
+		$(".loader").delay(400).fadeOut("fast");
+
+		$(".top_text h1").animated("fadeInDown", "fadeOutUp");
+		$(".top_text h3").animated("fadeInUp", "fadeOutDown");
+
+	}); 
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -37,4 +48,7 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
+
+
 });
+
