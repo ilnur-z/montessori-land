@@ -48,7 +48,10 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
-
-
+	function handleResize() {
+		$(".main_head").css("height",$(window).height());
+	}
+	$(window).resize(handleResize);
+	handleResize();
 });
 
