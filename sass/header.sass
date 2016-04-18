@@ -53,6 +53,14 @@ h3
 		top: 50%
 		position: absolute
 
+.top_line
+	height: 50px
+	width: 100%
+	background-color: rgba(0, 0, 0, 0.2)
+	z-index: 50
+	position: absolute
+
+
 .top_wrapper
 	display: table
 	width: 100%
@@ -77,6 +85,29 @@ h3
 			display: inline-block
 			padding: 10px 35px
 			color: #fff
+
+.menu
+	padding: 0
+	li
+		display: inline-block
+		margin-left: 47px
+		font-size: em(12px)
+		text-transform: uppercase
+		&:hover
+			border-bottom-width: 3px
+			border-bottom-color: #fff
+			border-bottom-style: solid
+		&:first-child
+			margin-left: 0
+		&:last-child
+			margin-left: 49px
+		a
+			color: #c4c4c4
+			text-decoration: none
+			&:hover
+				color: #fff
+				
+
 
 .hidden
 	display: none
