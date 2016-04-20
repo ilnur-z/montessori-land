@@ -88,15 +88,24 @@ h3
 
 .menu
 	padding: 0
+	margin: 0
 	li
 		display: inline-block
 		margin-left: 47px
 		font-size: em(12px)
 		text-transform: uppercase
+		padding-top: 15px
+		padding-bottom: 12px
+
+		+transition-property(border);
+		+transition-duration(0.2s);
+		+transition-timing-function(ease);
+		+transition-delay(0.1s);
 		&:hover
 			border-bottom-width: 3px
-			border-bottom-color: #fff
+			border-bottom-color: #ebe5d5
 			border-bottom-style: solid
+
 		&:first-child
 			margin-left: 0
 		&:last-child
@@ -104,8 +113,14 @@ h3
 		a
 			color: #c4c4c4
 			text-decoration: none
+			outline: none
+			+transition-property(text-shadow);
+			+transition-duration(0.07s);
+			+transition-timing-function(ease-in-out);
+			+transition-delay(0.0s);
 			&:hover
 				color: #fff
+				text-shadow: 0 0 10px
 				
 
 
