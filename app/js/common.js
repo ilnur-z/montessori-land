@@ -8,6 +8,7 @@ $(function() {
 
 		$(".top_text h1").animated("fadeInDown", "fadeOutUp");
 		$(".top_text h3").animated("fadeInUp", "fadeOutDown");
+		$(".top_text h3").animated("fadeInUp", "fadeOutDown");
 
 	}); 
 
