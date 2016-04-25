@@ -4,12 +4,17 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.logo
+		top: 50px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.menu
+		li
+			margin-left: 40px
+			&:last-child
+				margin-left: 40px
 
 
 /* Small Devices, Tablets */
@@ -35,6 +40,13 @@
 		-o-animation: none !important
 		-ms-animation: none !important
 		animation: none !important
+	.menu
+		display: none
+	.logo
+		top: 0
+		img
+			height: 50px
+
 
 
 /* Extra Small Devices, Phones */
