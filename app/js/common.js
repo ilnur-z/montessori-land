@@ -38,6 +38,10 @@ $(function() {
 		return false;
 	});
 
+	$(".menu_btn").click(function(){
+  		$(this).toggleClass("open");
+	});
+
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();

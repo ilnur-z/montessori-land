@@ -106,10 +106,10 @@ h3
 		padding-top: 15px
 		padding-bottom: 12px
 
-		+transition-property(border);
-		+transition-duration(0.2s);
-		+transition-timing-function(ease);
-		+transition-delay(0.1s);
+		+transition-property(border)
+		+transition-duration(0.2s)
+		+transition-timing-function(ease)
+		+transition-delay(0.1s)
 		&:hover
 			border-bottom-width: 3px
 			border-bottom-color: #ebe5d5
@@ -124,9 +124,9 @@ h3
 			text-decoration: none
 			outline: none
 			+transition-property(text-shadow);
-			+transition-duration(0.07s);
+			+transition-duration(0.07s)
 			+transition-timing-function(ease-in-out);
-			+transition-delay(0.0s);
+			+transition-delay(0.0s)
 			&:hover
 				color: #fff
 				text-shadow: 0 0 10px
@@ -149,6 +149,40 @@ h3
 			outline: none
 		&:first-child
 			font-family: "OpenSansBold"
+
+.menu_btn
+	width: $menu-width
+	height: $menu-height
+	margin-left: 0
+	margin-top: 15px
+	position: relative
+	float: right
+	z-index: 50
+
+	&:hover 
+		cursor: pointer
+	&.open 
+		.menu_btn_item
+			background: #fff
+			&:first-child 
+				+transform-origin(0px)
+				+transform(translateY(-1px) translateX(5px) rotate(45deg))
+	  
+			&:nth-child(2) 
+				opacity: 0
+			&:nth-child(3) 
+				+transform-origin(0px)
+				+transform(translateY(4px) translateX(5px) rotate(-45deg))
+				
+.menu_btn_item
+	+transition(all 0.2s)
+	display: block
+	width: $menu-width
+	height: 3px
+	margin: 0 0 5px
+	background: #fff
+	position: relative
+
 
 .hidden
 	display: none
