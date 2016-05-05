@@ -40,6 +40,7 @@ $(function() {
 
 	$(".menu_btn").click(function(){
   		$(this).toggleClass("open");
+  		$(".menu").slideToggle();
 	});
 
 	//Chrome Smooth Scroll
