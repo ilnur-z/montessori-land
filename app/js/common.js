@@ -41,6 +41,7 @@ $(function() {
 	$(".menu_btn").click(function(){
   		$(this).toggleClass("open");
   		$(".menu").slideToggle();
+  		$(".top_text").slideToggle();
 	});
 
 	//Chrome Smooth Scroll

@@ -42,6 +42,22 @@
 		animation: none !important
 	.menu
 		display: none
+		position: absolute
+		top: 50px
+		width: 100%
+		background-color: rgba(0, 0, 0, 0.2)
+		height: auto
+		margin-left: -15px
+		li
+			display: block
+			margin-left: auto
+			text-align: center
+			&:hover
+				border: none
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-left: 0
 	.logo
 		top: 0
 		img
@@ -94,6 +110,8 @@
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	.menu
+		display: block !important
+	.top_text
 		display: block !important
 
 
